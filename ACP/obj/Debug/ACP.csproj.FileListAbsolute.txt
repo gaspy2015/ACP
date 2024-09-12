@@ -171,3 +171,6 @@ D:\CHING\ICONS\Backup Files\InhouseDev\ACP\ACP\obj\Debug\ACP.frmNewProduct.resou
 D:\CHING\ICONS\Backup Files\InhouseDev\ACP\ACP\obj\Debug\ACP.frmProdDetails.resources
 D:\CHING\ICONS\Backup Files\InhouseDev\ACP\ACP\obj\Debug\ACP.frmProductDetails.resources
 D:\CHING\ICONS\Backup Files\InhouseDev\ACP\ACP\obj\Debug\ACP.csprojResolveAssemblyReference.cache
+D:\CHING\ICONS\Backup_Files\InhouseDev\ACP\ACP\bin\Debug\ACP.exe.config
+D:\CHING\ICONS\Backup_Files\InhouseDev\ACP\ACP\obj\Debug\ACP.exe
+D:\CHING\ICONS\Backup_Files\InhouseDev\ACP\ACP\obj\Debug\ACP.pdb
