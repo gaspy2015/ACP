@@ -1,0 +1,803 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E99B7734-F2B5-4616-914D-DADB4D2C3741}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ACP</RootNamespace>
+    <AssemblyName>ACP</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="acpDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>acpDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="acpDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="acpDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>acpDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="addressDIR.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="auditTrail.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="authority.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="barcode.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="barcodeClass.cs" />
+    <Compile Include="brand.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Category Hierarchy\CatHierarchyClass.cs" />
+    <Compile Include="categoryHierarchy.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="charge.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="componentSetup.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contactDIR.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contactType.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="C_pool.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dbClass.cs" />
+    <Compile Include="deliveryAddress.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="department.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="discount.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dsPO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="employee.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="exchangeRate.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddress.Designer.cs">
+      <DependentUpon>frmAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBrand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBrand.Designer.cs">
+      <DependentUpon>frmBrand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKitComponents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKitComponents.Designer.cs">
+      <DependentUpon>frmKitComponents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewProduct.Designer.cs">
+      <DependentUpon>frmNewProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProdDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdDetails.Designer.cs">
+      <DependentUpon>frmProdDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\productCreation.cs" />
+    <Compile Include="Supplier config\frmItemSalesTaxGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier config\frmItemSalesTaxGroup.Designer.cs">
+      <DependentUpon>frmItemSalesTaxGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier config\frmTaxSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier config\frmTaxSetup.Designer.cs">
+      <DependentUpon>frmTaxSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hierarchy.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="loginClass.cs" />
+    <Compile Include="productClass.cs" />
+    <Compile Include="profile.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Order\frmPOlines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Order\frmPOlines.Designer.cs">
+      <DependentUpon>frmPOlines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="receiving.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_catValidation_Result1.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Hierarchy_Result.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Supplier_Result.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="supplierSetupClass.cs" />
+    <Compile Include="Supplier\frmContactType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\frmContactType.Designer.cs">
+      <DependentUpon>frmContactType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\frmNewContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\frmNewContact.Designer.cs">
+      <DependentUpon>frmNewContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\frmOtherPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmPostingReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmPostingReceipt.Designer.cs">
+      <DependentUpon>frmPostingReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sp_catValidation_Result.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_reportPO_Result.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddLines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddLines.Designer.cs">
+      <DependentUpon>frmAddLines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\frmReceiving.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmReceiving.Designer.cs">
+      <DependentUpon>frmReceiving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReports.Designer.cs">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="infoCategory.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="inventLocation.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="invent_in.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="itemModelGroup.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="itemSalesTaxGroup.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="modeOfDelivery.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="otherPrice.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="paymentTerm.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="personDIR.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PO_Class.cs" />
+    <Compile Include="PO_Line.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prodInvent.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="product.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="product_subType.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="product_type.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Order\frmAddOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Order\frmAddOrder.Designer.cs">
+      <DependentUpon>frmAddOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\frmOtherPrice.Designer.cs">
+      <DependentUpon>frmOtherPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaymentConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaymentConfig.Designer.cs">
+      <DependentUpon>frmPaymentConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier config\frmPaymentTerm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier config\frmPaymentTerm.Designer.cs">
+      <DependentUpon>frmPaymentTerm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\frmProductDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\frmProductDetails.Designer.cs">
+      <DependentUpon>frmProductDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Order\frmPurchaseOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Order\frmPurchaseOrder.Designer.cs">
+      <DependentUpon>frmPurchaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUOM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUOM.Designer.cs">
+      <DependentUpon>frmUOM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="purchase_order.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="rsrvtnHierarchy.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="site.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_PurchaseOrder_Result.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="storageDmnsnGroup.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="suppGroup.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="supplier.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\frmAddSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\frmAddSupplier.Designer.cs">
+      <DependentUpon>frmAddSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Discounts\frmDiscount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\Discounts\frmDiscount.Designer.cs">
+      <DependentUpon>frmDiscount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Discounts\frmItemTax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\Discounts\frmItemTax.Designer.cs">
+      <DependentUpon>frmItemTax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frmSite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frmSite.Designer.cs">
+      <DependentUpon>frmSite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frmInventLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frmInventLocation.Designer.cs">
+      <DependentUpon>frmInventLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\frmProdSubType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\frmProdSubType.Designer.cs">
+      <DependentUpon>frmProdSubType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\frmProdType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\frmProdType.Designer.cs">
+      <DependentUpon>frmProdType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frmItemModelGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frmItemModelGroup.Designer.cs">
+      <DependentUpon>frmItemModelGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\frmModifyProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\frmModifyProd.Designer.cs">
+      <DependentUpon>frmModifyProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\frmNewAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\frmNewAddress.Designer.cs">
+      <DependentUpon>frmNewAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\frmProdTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\frmProdTemplate.Designer.cs">
+      <DependentUpon>frmProdTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\frmProductMgmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\frmProductMgmt.Designer.cs">
+      <DependentUpon>frmProductMgmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frmRsrvtnHierarchy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frmRsrvtnHierarchy.Designer.cs">
+      <DependentUpon>frmRsrvtnHierarchy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frmStorageGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frmStorageGroup.Designer.cs">
+      <DependentUpon>frmStorageGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\frmSupplierMgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\frmSupplierMgt.Designer.cs">
+      <DependentUpon>frmSupplierMgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frmTrackingGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frmTrackingGroup.Designer.cs">
+      <DependentUpon>frmTrackingGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\supplierClass.cs" />
+    <Compile Include="frMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frMain.Designer.cs">
+      <DependentUpon>frMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category Hierarchy\frmCatHierarchy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category Hierarchy\frmCatHierarchy.Designer.cs">
+      <DependentUpon>frmCatHierarchy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="taxSetup.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="template.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="testCatHierarchy.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="trackingDmnsnGroup.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="treeview.cs" />
+    <Compile Include="UOM.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="user_tbl.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwAuditTrail.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwBMRX.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwCatHierarchy.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwCatHierarchyTree.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwContactDIR.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwDeliveryAddress.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwDiscount.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwDistributor.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwInventLocation.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwItemModelGroup.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwItemSalesTaxSetup.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwKitComponent.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwLineDiscount.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwOtherPrice.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwPOReport.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwPO_Line.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwPrincipal.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwPrivilegeCard.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwProdInvent.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwProdPurchasing.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwProduct.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwProductCost.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwProductList.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwPurchaseOrder.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwSite.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwSupplier.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwUvalidation.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwWarehouseSetup.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="warehouse.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="whLocation.cs">
+      <DependentUpon>acpDB.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmAddress.resx">
+      <DependentUpon>frmAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrand.resx">
+      <DependentUpon>frmBrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKitComponents.resx">
+      <DependentUpon>frmKitComponents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewProduct.resx">
+      <DependentUpon>frmNewProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdDetails.resx">
+      <DependentUpon>frmProdDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier config\frmItemSalesTaxGroup.resx">
+      <DependentUpon>frmItemSalesTaxGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier config\frmTaxSetup.resx">
+      <DependentUpon>frmTaxSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Order\frmPOlines.resx">
+      <DependentUpon>frmPOlines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\frmContactType.resx">
+      <DependentUpon>frmContactType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\frmNewContact.resx">
+      <DependentUpon>frmNewContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\frmPostingReceipt.resx">
+      <DependentUpon>frmPostingReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddLines.resx">
+      <DependentUpon>frmAddLines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\frmReceiving.resx">
+      <DependentUpon>frmReceiving.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReports.resx">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Order\frmAddOrder.resx">
+      <DependentUpon>frmAddOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\frmOtherPrice.resx">
+      <DependentUpon>frmOtherPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaymentConfig.resx">
+      <DependentUpon>frmPaymentConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier config\frmPaymentTerm.resx">
+      <DependentUpon>frmPaymentTerm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Order\frmPurchaseOrder.resx">
+      <DependentUpon>frmPurchaseOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\frmProductDetails.resx">
+      <DependentUpon>frmProductDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUOM.resx">
+      <DependentUpon>frmUOM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportPO.rdlc" />
+    <EmbeddedResource Include="Supplier\frmAddSupplier.resx">
+      <DependentUpon>frmAddSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\Discounts\frmDiscount.resx">
+      <DependentUpon>frmDiscount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\Discounts\frmItemTax.resx">
+      <DependentUpon>frmItemTax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frmSite.resx">
+      <DependentUpon>frmSite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frmInventLocation.resx">
+      <DependentUpon>frmInventLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\frmProdSubType.resx">
+      <DependentUpon>frmProdSubType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\frmProdType.resx">
+      <DependentUpon>frmProdType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frmItemModelGroup.resx">
+      <DependentUpon>frmItemModelGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\frmModifyProd.resx">
+      <DependentUpon>frmModifyProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\frmNewAddress.resx">
+      <DependentUpon>frmNewAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\frmProdTemplate.resx">
+      <DependentUpon>frmProdTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\frmProductMgmt.resx">
+      <DependentUpon>frmProductMgmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frmRsrvtnHierarchy.resx">
+      <DependentUpon>frmRsrvtnHierarchy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frmStorageGroup.resx">
+      <DependentUpon>frmStorageGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\frmSupplierMgt.resx">
+      <DependentUpon>frmSupplierMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frmTrackingGroup.resx">
+      <DependentUpon>frmTrackingGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frMain.resx">
+      <DependentUpon>frMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category Hierarchy\frmCatHierarchy.resx">
+      <DependentUpon>frmCatHierarchy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EntityDeploy Include="acpDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>acpDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="acpDB.edmx.diagram">
+      <DependentUpon>acpDB.edmx</DependentUpon>
+    </None>
+    <None Include="dsPO.xsc">
+      <DependentUpon>dsPO.xsd</DependentUpon>
+    </None>
+    <None Include="dsPO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsPO.xss">
+      <DependentUpon>dsPO.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Item sales tax group\" />
+    <Folder Include="Retail\" />
+    <Folder Include="Supplier\group\" />
+    <Folder Include="Supplier\paymentTerm\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowRight10px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowDown10px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\location %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\placeholder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="acpDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>acpDB.edmx</DependentUpon>
+      <LastGenOutput>acpDB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="acpDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>acpDB.edmx</DependentUpon>
+      <LastGenOutput>acpDB.cs</LastGenOutput>
+    </Content>
+    <None Include="Resources\forbidden.png" />
+    <None Include="Resources\check-mark %282%29.png" />
+    <None Include="Resources\Ace logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
