@@ -37,9 +37,11 @@ namespace ACP
            // var inc = (from a in db.suppliers where a.isDistributor == false select a).Max(b => Int32.Parse(b.suppID));
            // currentID = Convert.ToInt32(inc) + 1;
            //txtSupCode.Text = currentID.ToString();
-            var inc = db.sp_autoInc("Principal");
-            txtSupCode.Text = inc.FirstOrDefault().Value.ToString();
-            string currentMaxID = inc.FirstOrDefault().Value.ToString();
+            //var inc = db.sp_autoInc("Principal");
+            //txtSupCode.Text = inc.FirstOrDefault().Value.ToString();
+            //string currentMaxID = inc.FirstOrDefault().Value.ToString();
+            int inc = supClass.autoIncrementID("suppID", "supplier");
+            txtSupCode.Text = inc.ToString();
         }
 
         private void noPrincipal()
