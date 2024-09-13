@@ -448,6 +448,11 @@ namespace ACP
             principal.lblDistriName.Text = Id.distriName;
             principal.txtDistriName.Text = Id.distriName;
             //principal.btnChangeDistri.Visible = false;
+<<<<<<< HEAD
+=======
+            //principal.tabControl1.TabPages.RemoveAt(1);
+            //principal.tabControl1.TabPages.RemoveAt(1);
+>>>>>>> 0656247ef7ca4511942f0299d4d9d8435c786076
             principal.btnClear.Location = new Point(769, 15);
             principal.btnSave.Location = new Point(769, 55);
             //principal.dgvPrincipal.DataSource = (from a in db.vwPrincipals
