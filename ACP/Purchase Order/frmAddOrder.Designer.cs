@@ -1022,7 +1022,7 @@
             this.pLines.MaximumSize = new System.Drawing.Size(1104, 304);
             this.pLines.MinimumSize = new System.Drawing.Size(2, 22);
             this.pLines.Name = "pLines";
-            this.pLines.Size = new System.Drawing.Size(1086, 200);
+            this.pLines.Size = new System.Drawing.Size(1086, 22);
             this.pLines.TabIndex = 1;
             // 
             // groupBox1
