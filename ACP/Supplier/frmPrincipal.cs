@@ -25,10 +25,10 @@ namespace ACP
 
         public void payTerms()
         {
-            cmbPayTerms.DataSource = (from a in db.paymentTerms select a).ToList();
-            cmbPayTerms.ValueMember = "payID";
-            cmbPayTerms.DisplayMember = "payDesc";
-            cmbPayTerms.Text = "";
+            //cmbPayTerms.DataSource = (from a in db.paymentTerms select a).ToList();
+            //cmbPayTerms.ValueMember = "payID";
+            //cmbPayTerms.DisplayMember = "payDesc";
+            //cmbPayTerms.Text = "";
         }
 
         string currentMaxID;
@@ -37,9 +37,9 @@ namespace ACP
            // var inc = (from a in db.suppliers where a.isDistributor == false select a).Max(b => Int32.Parse(b.suppID));
            // currentID = Convert.ToInt32(inc) + 1;
            //txtSupCode.Text = currentID.ToString();
-            var inc = db.sp_autoInc("Principal");
-            txtSupCode.Text = inc.FirstOrDefault().Value.ToString();
-            string currentMaxID = inc.FirstOrDefault().Value.ToString();
+            //var inc = db.sp_autoInc("Principal");
+            //txtSupCode.Text = inc.FirstOrDefault().Value.ToString();
+            //string currentMaxID = inc.FirstOrDefault().Value.ToString();
         }
 
         private void noPrincipal()
@@ -57,10 +57,10 @@ namespace ACP
         }
         private void blankCMB()
         {
-            if(Id.button.Equals("Create"))
-            {
-                cmbPayTerms.Text = "";
-            }
+            //if(Id.button.Equals("Create"))
+            //{
+            //    cmbPayTerms.Text = "";
+            //}
         }
         
         private void fetchPrincipal()
