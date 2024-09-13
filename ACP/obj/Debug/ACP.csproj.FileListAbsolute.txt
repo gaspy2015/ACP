@@ -229,3 +229,6 @@ C:\Users\cstablazon\Source\Repos\ACP\ACP\bin\Debug\EntityFramework.dll
 C:\Users\cstablazon\Source\Repos\ACP\ACP\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\cstablazon\Source\Repos\ACP\ACP\bin\Debug\EntityFramework.xml
 C:\Users\cstablazon\Source\Repos\ACP\ACP\bin\Debug\EntityFramework.SqlServer.xml
+D:\GASPY FILES\ACE PROJECTS\ACP\ACP\bin\Debug\ACP.exe.config
+D:\GASPY FILES\ACE PROJECTS\ACP\ACP\obj\Debug\ACP.exe
+D:\GASPY FILES\ACE PROJECTS\ACP\ACP\obj\Debug\ACP.pdb
