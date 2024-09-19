@@ -11,6 +11,7 @@ namespace ACP
         AutoCompleteStringCollection data;
         DataTable dt;
         DataSet ds;
+        
         public SqlConnection getConnection()
         {
             System.Data.SqlClient.SqlConnection conn = new SqlConnection(ConnectionString);

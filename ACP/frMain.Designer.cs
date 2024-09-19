@@ -29,95 +29,95 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Product Management");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("All purchase order");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Purchase Order", new System.Windows.Forms.TreeNode[] {
-            treeNode2});
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("All return order");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Return Order", new System.Windows.Forms.TreeNode[] {
-            treeNode4});
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Process", new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode3,
-            treeNode5});
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Hierarchy");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Storage Dimension Group");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Item Model Group");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Tracking Dimension Group");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Reservation Hierarchy");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Unit of Measure");
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Inventory Location");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Site");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Warehouse", new System.Windows.Forms.TreeNode[] {
-            treeNode13,
-            treeNode14});
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Inventory", new System.Windows.Forms.TreeNode[] {
-            treeNode8,
-            treeNode9,
-            treeNode10,
-            treeNode11,
-            treeNode12,
-            treeNode15});
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Product Type");
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Product Subtype");
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Discount");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Item Tax Group");
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Discounts", new System.Windows.Forms.TreeNode[] {
-            treeNode19,
-            treeNode20});
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("Product", new System.Windows.Forms.TreeNode[] {
-            treeNode17,
-            treeNode18,
-            treeNode21});
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Brand");
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("Setup", new System.Windows.Forms.TreeNode[] {
-            treeNode7,
-            treeNode16,
-            treeNode22,
-            treeNode23});
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Reports");
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("Warehouse & Inventory", 6, 6, new System.Windows.Forms.TreeNode[] {
-            treeNode6,
-            treeNode24,
-            treeNode25});
-            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("Process");
-            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("Setup");
-            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("Reports");
-            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("Retail", 7, 7, new System.Windows.Forms.TreeNode[] {
-            treeNode27,
-            treeNode28,
-            treeNode29});
-            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("Process");
-            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("Setup");
-            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("Reports");
-            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("Human Resource", 8, 8, new System.Windows.Forms.TreeNode[] {
-            treeNode31,
-            treeNode32,
-            treeNode33});
-            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("Supplier Management");
-            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("Process", new System.Windows.Forms.TreeNode[] {
-            treeNode35});
-            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("Payment Terms");
-            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("Group");
-            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("Contact type");
-            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("Setup", new System.Windows.Forms.TreeNode[] {
-            treeNode37,
-            treeNode38,
-            treeNode39});
-            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("Reports");
-            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("Accounting", new System.Windows.Forms.TreeNode[] {
-            treeNode36,
-            treeNode40,
-            treeNode41});
-            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("Process");
-            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("Item Sales Tax Group");
-            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("Setup", new System.Windows.Forms.TreeNode[] {
-            treeNode44});
-            System.Windows.Forms.TreeNode treeNode46 = new System.Windows.Forms.TreeNode("Reports");
-            System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("Administration", 4, 4, new System.Windows.Forms.TreeNode[] {
-            treeNode43,
-            treeNode45,
-            treeNode46});
+            System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("Product Management");
+            System.Windows.Forms.TreeNode treeNode49 = new System.Windows.Forms.TreeNode("All purchase order");
+            System.Windows.Forms.TreeNode treeNode50 = new System.Windows.Forms.TreeNode("Purchase Order", new System.Windows.Forms.TreeNode[] {
+            treeNode49});
+            System.Windows.Forms.TreeNode treeNode51 = new System.Windows.Forms.TreeNode("All return order");
+            System.Windows.Forms.TreeNode treeNode52 = new System.Windows.Forms.TreeNode("Return Order", new System.Windows.Forms.TreeNode[] {
+            treeNode51});
+            System.Windows.Forms.TreeNode treeNode53 = new System.Windows.Forms.TreeNode("Process", new System.Windows.Forms.TreeNode[] {
+            treeNode48,
+            treeNode50,
+            treeNode52});
+            System.Windows.Forms.TreeNode treeNode54 = new System.Windows.Forms.TreeNode("Hierarchy");
+            System.Windows.Forms.TreeNode treeNode55 = new System.Windows.Forms.TreeNode("Storage Dimension Group");
+            System.Windows.Forms.TreeNode treeNode56 = new System.Windows.Forms.TreeNode("Item Model Group");
+            System.Windows.Forms.TreeNode treeNode57 = new System.Windows.Forms.TreeNode("Tracking Dimension Group");
+            System.Windows.Forms.TreeNode treeNode58 = new System.Windows.Forms.TreeNode("Reservation Hierarchy");
+            System.Windows.Forms.TreeNode treeNode59 = new System.Windows.Forms.TreeNode("Unit of Measure");
+            System.Windows.Forms.TreeNode treeNode60 = new System.Windows.Forms.TreeNode("Inventory Location");
+            System.Windows.Forms.TreeNode treeNode61 = new System.Windows.Forms.TreeNode("Site");
+            System.Windows.Forms.TreeNode treeNode62 = new System.Windows.Forms.TreeNode("Warehouse", new System.Windows.Forms.TreeNode[] {
+            treeNode60,
+            treeNode61});
+            System.Windows.Forms.TreeNode treeNode63 = new System.Windows.Forms.TreeNode("Inventory", new System.Windows.Forms.TreeNode[] {
+            treeNode55,
+            treeNode56,
+            treeNode57,
+            treeNode58,
+            treeNode59,
+            treeNode62});
+            System.Windows.Forms.TreeNode treeNode64 = new System.Windows.Forms.TreeNode("Product Type");
+            System.Windows.Forms.TreeNode treeNode65 = new System.Windows.Forms.TreeNode("Product Subtype");
+            System.Windows.Forms.TreeNode treeNode66 = new System.Windows.Forms.TreeNode("Discount");
+            System.Windows.Forms.TreeNode treeNode67 = new System.Windows.Forms.TreeNode("Item Tax Group");
+            System.Windows.Forms.TreeNode treeNode68 = new System.Windows.Forms.TreeNode("Discounts", new System.Windows.Forms.TreeNode[] {
+            treeNode66,
+            treeNode67});
+            System.Windows.Forms.TreeNode treeNode69 = new System.Windows.Forms.TreeNode("Product", new System.Windows.Forms.TreeNode[] {
+            treeNode64,
+            treeNode65,
+            treeNode68});
+            System.Windows.Forms.TreeNode treeNode70 = new System.Windows.Forms.TreeNode("Brand");
+            System.Windows.Forms.TreeNode treeNode71 = new System.Windows.Forms.TreeNode("Setup", new System.Windows.Forms.TreeNode[] {
+            treeNode54,
+            treeNode63,
+            treeNode69,
+            treeNode70});
+            System.Windows.Forms.TreeNode treeNode72 = new System.Windows.Forms.TreeNode("Reports");
+            System.Windows.Forms.TreeNode treeNode73 = new System.Windows.Forms.TreeNode("Warehouse & Inventory", 6, 6, new System.Windows.Forms.TreeNode[] {
+            treeNode53,
+            treeNode71,
+            treeNode72});
+            System.Windows.Forms.TreeNode treeNode74 = new System.Windows.Forms.TreeNode("Process");
+            System.Windows.Forms.TreeNode treeNode75 = new System.Windows.Forms.TreeNode("Setup");
+            System.Windows.Forms.TreeNode treeNode76 = new System.Windows.Forms.TreeNode("Reports");
+            System.Windows.Forms.TreeNode treeNode77 = new System.Windows.Forms.TreeNode("Retail", 7, 7, new System.Windows.Forms.TreeNode[] {
+            treeNode74,
+            treeNode75,
+            treeNode76});
+            System.Windows.Forms.TreeNode treeNode78 = new System.Windows.Forms.TreeNode("Process");
+            System.Windows.Forms.TreeNode treeNode79 = new System.Windows.Forms.TreeNode("Setup");
+            System.Windows.Forms.TreeNode treeNode80 = new System.Windows.Forms.TreeNode("Reports");
+            System.Windows.Forms.TreeNode treeNode81 = new System.Windows.Forms.TreeNode("Human Resource", 8, 8, new System.Windows.Forms.TreeNode[] {
+            treeNode78,
+            treeNode79,
+            treeNode80});
+            System.Windows.Forms.TreeNode treeNode82 = new System.Windows.Forms.TreeNode("Supplier Management");
+            System.Windows.Forms.TreeNode treeNode83 = new System.Windows.Forms.TreeNode("Process", new System.Windows.Forms.TreeNode[] {
+            treeNode82});
+            System.Windows.Forms.TreeNode treeNode84 = new System.Windows.Forms.TreeNode("Payment Terms");
+            System.Windows.Forms.TreeNode treeNode85 = new System.Windows.Forms.TreeNode("Group");
+            System.Windows.Forms.TreeNode treeNode86 = new System.Windows.Forms.TreeNode("Contact type");
+            System.Windows.Forms.TreeNode treeNode87 = new System.Windows.Forms.TreeNode("Setup", new System.Windows.Forms.TreeNode[] {
+            treeNode84,
+            treeNode85,
+            treeNode86});
+            System.Windows.Forms.TreeNode treeNode88 = new System.Windows.Forms.TreeNode("Reports");
+            System.Windows.Forms.TreeNode treeNode89 = new System.Windows.Forms.TreeNode("Accounting", new System.Windows.Forms.TreeNode[] {
+            treeNode83,
+            treeNode87,
+            treeNode88});
+            System.Windows.Forms.TreeNode treeNode90 = new System.Windows.Forms.TreeNode("Process");
+            System.Windows.Forms.TreeNode treeNode91 = new System.Windows.Forms.TreeNode("Item Sales Tax Group");
+            System.Windows.Forms.TreeNode treeNode92 = new System.Windows.Forms.TreeNode("Setup", new System.Windows.Forms.TreeNode[] {
+            treeNode91});
+            System.Windows.Forms.TreeNode treeNode93 = new System.Windows.Forms.TreeNode("Reports");
+            System.Windows.Forms.TreeNode treeNode94 = new System.Windows.Forms.TreeNode("Administration", 4, 4, new System.Windows.Forms.TreeNode[] {
+            treeNode90,
+            treeNode92,
+            treeNode93});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frMain));
             this.pHeader = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
@@ -127,9 +127,9 @@
             this.tvModule = new System.Windows.Forms.TreeView();
             this.imageModule = new System.Windows.Forms.ImageList(this.components);
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pBody = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pHeader.SuspendLayout();
             this.pSidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -205,117 +205,117 @@
             this.tvModule.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tvModule.ImageIndex = 0;
             this.tvModule.ImageList = this.imageModule;
-            this.tvModule.Location = new System.Drawing.Point(3, 110);
+            this.tvModule.Location = new System.Drawing.Point(7, 110);
             this.tvModule.Name = "tvModule";
-            treeNode1.Name = "ProductMgt";
-            treeNode1.Text = "Product Management";
-            treeNode2.Name = "allPO";
-            treeNode2.Text = "All purchase order";
-            treeNode3.Name = "po";
-            treeNode3.Text = "Purchase Order";
-            treeNode4.Name = "allReturnOrder";
-            treeNode4.Text = "All return order";
-            treeNode5.Name = "returnOrder";
-            treeNode5.Text = "Return Order";
-            treeNode6.Name = "cWareProcesss";
-            treeNode6.Text = "Process";
-            treeNode7.Name = "catHierarchy";
-            treeNode7.Text = "Hierarchy";
-            treeNode8.Name = "storage_dimension_group";
-            treeNode8.Text = "Storage Dimension Group";
-            treeNode9.Name = "item_model_group";
-            treeNode9.Text = "Item Model Group";
-            treeNode10.Name = "tracking_group";
-            treeNode10.Text = "Tracking Dimension Group";
-            treeNode11.Name = "reserv_hierarchy";
-            treeNode11.Text = "Reservation Hierarchy";
-            treeNode12.Name = "uom";
-            treeNode12.Text = "Unit of Measure";
-            treeNode13.Name = "inventLocation";
-            treeNode13.Text = "Inventory Location";
-            treeNode14.Name = "site";
-            treeNode14.Text = "Site";
-            treeNode15.Name = "warehouse";
-            treeNode15.Text = "Warehouse";
-            treeNode16.Name = "inventory";
-            treeNode16.Text = "Inventory";
-            treeNode17.Name = "prodType";
-            treeNode17.Text = "Product Type";
-            treeNode18.Name = "prodSubType";
-            treeNode18.Text = "Product Subtype";
-            treeNode19.Name = "discount";
-            treeNode19.Text = "Discount";
-            treeNode20.Name = "item_tax_group";
-            treeNode20.Text = "Item Tax Group";
-            treeNode21.Name = "discounts";
-            treeNode21.Text = "Discounts";
-            treeNode22.Name = "product";
-            treeNode22.Text = "Product";
-            treeNode23.Name = "brand";
-            treeNode23.Text = "Brand";
-            treeNode24.Name = "cWareSetup";
-            treeNode24.Text = "Setup";
-            treeNode25.Name = "cWareReports";
-            treeNode25.Text = "Reports";
-            treeNode26.ImageIndex = 6;
-            treeNode26.Name = "pWI";
-            treeNode26.SelectedImageIndex = 6;
-            treeNode26.Text = "Warehouse & Inventory";
-            treeNode27.Name = "cRetailProcess";
-            treeNode27.Text = "Process";
-            treeNode28.Name = "cRetailSetup";
-            treeNode28.Text = "Setup";
-            treeNode29.Name = "cRetailReports";
-            treeNode29.Text = "Reports";
-            treeNode30.ImageIndex = 7;
-            treeNode30.Name = "pRetail";
-            treeNode30.SelectedImageIndex = 7;
-            treeNode30.Text = "Retail";
-            treeNode31.Name = "cHRProcess";
-            treeNode31.Text = "Process";
-            treeNode32.Name = "cHRSetup";
-            treeNode32.Text = "Setup";
-            treeNode33.Name = "cHRReports";
-            treeNode33.Text = "Reports";
-            treeNode34.ImageIndex = 8;
-            treeNode34.Name = "pHR";
-            treeNode34.SelectedImageIndex = 8;
-            treeNode34.Text = "Human Resource";
-            treeNode35.Name = "supp";
-            treeNode35.Text = "Supplier Management";
-            treeNode36.Name = "cAccountingProcess";
-            treeNode36.Text = "Process";
-            treeNode37.Name = "paymentTerm";
-            treeNode37.Text = "Payment Terms";
-            treeNode38.Name = "group";
-            treeNode38.Text = "Group";
-            treeNode39.Name = "contactType";
-            treeNode39.Text = "Contact type";
-            treeNode40.Name = "cAccountingSetup";
-            treeNode40.Text = "Setup";
-            treeNode41.Name = "cAccountingReports";
-            treeNode41.Text = "Reports";
-            treeNode42.ImageIndex = 0;
-            treeNode42.Name = "pAccounting";
-            treeNode42.Text = "Accounting";
-            treeNode43.Name = "cAdminProcess";
-            treeNode43.Text = "Process";
-            treeNode44.Name = "itemSalesTaxGroup";
-            treeNode44.Text = "Item Sales Tax Group";
-            treeNode45.Name = "cAdminSetup";
-            treeNode45.Text = "Setup";
-            treeNode46.Name = "cAdminReports";
-            treeNode46.Text = "Reports";
-            treeNode47.ImageIndex = 4;
-            treeNode47.Name = "pAdmin";
-            treeNode47.SelectedImageIndex = 4;
-            treeNode47.Text = "Administration";
+            treeNode48.Name = "ProductMgt";
+            treeNode48.Text = "Product Management";
+            treeNode49.Name = "allPO";
+            treeNode49.Text = "All purchase order";
+            treeNode50.Name = "po";
+            treeNode50.Text = "Purchase Order";
+            treeNode51.Name = "allReturnOrder";
+            treeNode51.Text = "All return order";
+            treeNode52.Name = "returnOrder";
+            treeNode52.Text = "Return Order";
+            treeNode53.Name = "cWareProcesss";
+            treeNode53.Text = "Process";
+            treeNode54.Name = "catHierarchy";
+            treeNode54.Text = "Hierarchy";
+            treeNode55.Name = "storage_dimension_group";
+            treeNode55.Text = "Storage Dimension Group";
+            treeNode56.Name = "item_model_group";
+            treeNode56.Text = "Item Model Group";
+            treeNode57.Name = "tracking_group";
+            treeNode57.Text = "Tracking Dimension Group";
+            treeNode58.Name = "reserv_hierarchy";
+            treeNode58.Text = "Reservation Hierarchy";
+            treeNode59.Name = "uom";
+            treeNode59.Text = "Unit of Measure";
+            treeNode60.Name = "inventLocation";
+            treeNode60.Text = "Inventory Location";
+            treeNode61.Name = "site";
+            treeNode61.Text = "Site";
+            treeNode62.Name = "warehouse";
+            treeNode62.Text = "Warehouse";
+            treeNode63.Name = "inventory";
+            treeNode63.Text = "Inventory";
+            treeNode64.Name = "prodType";
+            treeNode64.Text = "Product Type";
+            treeNode65.Name = "prodSubType";
+            treeNode65.Text = "Product Subtype";
+            treeNode66.Name = "discount";
+            treeNode66.Text = "Discount";
+            treeNode67.Name = "item_tax_group";
+            treeNode67.Text = "Item Tax Group";
+            treeNode68.Name = "discounts";
+            treeNode68.Text = "Discounts";
+            treeNode69.Name = "product";
+            treeNode69.Text = "Product";
+            treeNode70.Name = "brand";
+            treeNode70.Text = "Brand";
+            treeNode71.Name = "cWareSetup";
+            treeNode71.Text = "Setup";
+            treeNode72.Name = "cWareReports";
+            treeNode72.Text = "Reports";
+            treeNode73.ImageIndex = 6;
+            treeNode73.Name = "pWI";
+            treeNode73.SelectedImageIndex = 6;
+            treeNode73.Text = "Warehouse & Inventory";
+            treeNode74.Name = "cRetailProcess";
+            treeNode74.Text = "Process";
+            treeNode75.Name = "cRetailSetup";
+            treeNode75.Text = "Setup";
+            treeNode76.Name = "cRetailReports";
+            treeNode76.Text = "Reports";
+            treeNode77.ImageIndex = 7;
+            treeNode77.Name = "pRetail";
+            treeNode77.SelectedImageIndex = 7;
+            treeNode77.Text = "Retail";
+            treeNode78.Name = "cHRProcess";
+            treeNode78.Text = "Process";
+            treeNode79.Name = "cHRSetup";
+            treeNode79.Text = "Setup";
+            treeNode80.Name = "cHRReports";
+            treeNode80.Text = "Reports";
+            treeNode81.ImageIndex = 8;
+            treeNode81.Name = "pHR";
+            treeNode81.SelectedImageIndex = 8;
+            treeNode81.Text = "Human Resource";
+            treeNode82.Name = "supp";
+            treeNode82.Text = "Supplier Management";
+            treeNode83.Name = "cAccountingProcess";
+            treeNode83.Text = "Process";
+            treeNode84.Name = "paymentTerm";
+            treeNode84.Text = "Payment Terms";
+            treeNode85.Name = "group";
+            treeNode85.Text = "Group";
+            treeNode86.Name = "contactType";
+            treeNode86.Text = "Contact type";
+            treeNode87.Name = "cAccountingSetup";
+            treeNode87.Text = "Setup";
+            treeNode88.Name = "cAccountingReports";
+            treeNode88.Text = "Reports";
+            treeNode89.ImageIndex = 0;
+            treeNode89.Name = "pAccounting";
+            treeNode89.Text = "Accounting";
+            treeNode90.Name = "cAdminProcess";
+            treeNode90.Text = "Process";
+            treeNode91.Name = "itemSalesTaxGroup";
+            treeNode91.Text = "Item Sales Tax Group";
+            treeNode92.Name = "cAdminSetup";
+            treeNode92.Text = "Setup";
+            treeNode93.Name = "cAdminReports";
+            treeNode93.Text = "Reports";
+            treeNode94.ImageIndex = 4;
+            treeNode94.Name = "pAdmin";
+            treeNode94.SelectedImageIndex = 4;
+            treeNode94.Text = "Administration";
             this.tvModule.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode26,
-            treeNode30,
-            treeNode34,
-            treeNode42,
-            treeNode47});
+            treeNode73,
+            treeNode77,
+            treeNode81,
+            treeNode89,
+            treeNode94});
             this.tvModule.SelectedImageIndex = 0;
             this.tvModule.Size = new System.Drawing.Size(278, 546);
             this.tvModule.TabIndex = 6;
@@ -346,6 +346,16 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Administrator";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(93, 6);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(81, 65);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
             // pBody
             // 
             this.pBody.BackColor = System.Drawing.Color.White;
@@ -364,16 +374,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(2, 668);
             this.panel1.TabIndex = 4;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(93, 6);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(81, 65);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
             // 
             // frMain
             // 

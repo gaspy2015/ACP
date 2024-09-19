@@ -36,5 +36,10 @@ namespace ACP
                 //pc.modifyProduct("CRUD", "PRODINVENT", "", "", "", "", mp.txtBarcode.Text, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", pc.autoIncrementID("templateID", "template").ToString(), txtTemplateName.Text);
             }
         }
+
+        private void frmProdTemplate_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

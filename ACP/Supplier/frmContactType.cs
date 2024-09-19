@@ -137,5 +137,10 @@ namespace ACP
                 refresh();
             }
         }
+
+        private void frmContactType_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

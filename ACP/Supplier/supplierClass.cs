@@ -22,46 +22,6 @@ namespace ACP
             return currentMaxValue;
         }
         //insert and update supplier records
-        public void insertSupplier(string suppID, string payID, string sGroup, string name, string agent, string rtype, string fn, string mn, string ln, string suffix, string gender, string dob, string status)
-        {
-            try
-            {
-                SqlConnection conn = db.getConnection();
-                conn.Open();
-                SqlCommand cmd = new SqlCommand("sp_Supplier", conn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                //organization directory
-                cmd.Parameters.AddWithValue("@desc", "SUPPLIER");
-                cmd.Parameters.AddWithValue("@Id", "");
-                cmd.Parameters.AddWithValue("@action", "CRUD");
-                cmd.Parameters.AddWithValue("@suppID", suppID);
-                cmd.Parameters.AddWithValue("@payID", payID);
-                cmd.Parameters.AddWithValue("@sGroupID", sGroup);
-                cmd.Parameters.AddWithValue("@name", name);
-                cmd.Parameters.AddWithValue("@agent", agent);
-                cmd.Parameters.AddWithValue("@rType", rtype);
-                cmd.Parameters.AddWithValue("@isActive", "1");
-
-                //person directory
-                cmd.Parameters.AddWithValue("@TID", suppID);
-                cmd.Parameters.AddWithValue("@firstname", fn);
-                cmd.Parameters.AddWithValue("@middlename", mn);
-                cmd.Parameters.AddWithValue("@lastname", ln);
-                cmd.Parameters.AddWithValue("@suffix", suffix);
-                cmd.Parameters.AddWithValue("@gender", gender);
-                cmd.Parameters.AddWithValue("@dateOfBirth", dob);
-                cmd.Parameters.AddWithValue("@status", status);
-                cmd.Parameters.AddWithValue("@rType2", "Supplier");
-                string message = cmd.ExecuteScalar().ToString();
-                conn.Close();
-                MessageBox.Show(message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
 
         //list of supplier record
         

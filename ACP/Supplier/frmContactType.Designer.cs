@@ -58,7 +58,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 68);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(2, 459);
+            this.panel2.Size = new System.Drawing.Size(2, 455);
             this.panel2.TabIndex = 71;
             // 
             // panel3
@@ -67,7 +67,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 66);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(861, 2);
+            this.panel3.Size = new System.Drawing.Size(857, 2);
             this.panel3.TabIndex = 69;
             // 
             // label4
@@ -155,7 +155,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(861, 66);
+            this.panel1.Size = new System.Drawing.Size(857, 66);
             this.panel1.TabIndex = 68;
             // 
             // btnRefresh
@@ -235,7 +235,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(861, 527);
+            this.ClientSize = new System.Drawing.Size(857, 523);
             this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
@@ -250,6 +250,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmContactType_Load);
             this.sidebar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvContactType)).EndInit();
             this.groupBox1.ResumeLayout(false);

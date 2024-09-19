@@ -98,6 +98,7 @@
             this.Name = "frmProdTemplate";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Template";
+            this.Load += new System.EventHandler(this.frmProdTemplate_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
