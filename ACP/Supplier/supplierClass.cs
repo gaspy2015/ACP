@@ -57,8 +57,13 @@ namespace ACP
         }
 
         //list of supplier record
-        
 
+        public int autoIncrementID(string columnID, string table)
+        {
+            int currentMaxValue = 0;
+            currentMaxValue = db.autoIncrement("SELECT ISNULL(MAX(CAST(" + columnID + " as int)),0) FROM " + table + "");
+            return currentMaxValue;
+        }
 
 
         

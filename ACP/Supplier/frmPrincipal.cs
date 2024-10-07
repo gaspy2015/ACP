@@ -34,12 +34,12 @@ namespace ACP
         string currentMaxID;
         public void autoInc()
         {
-           // var inc = (from a in db.suppliers where a.isDistributor == false select a).Max(b => Int32.Parse(b.suppID));
-           // currentID = Convert.ToInt32(inc) + 1;
-           //txtSupCode.Text = currentID.ToString();
-            //var inc = db.sp_autoInc("Principal");
-            //txtSupCode.Text = inc.FirstOrDefault().Value.ToString();
-            //string currentMaxID = inc.FirstOrDefault().Value.ToString();
+            //var inc = (from a in db.suppliers where a.isDistributor == false select a).Max(b => Int32.Parse(b.suppID));
+            //currentID = Convert.ToInt32(inc) + 1;
+            //txtSupCode.Text = currentID.ToString();
+            int ID = supClass.autoIncrementID("suppID", "supplier");
+            txtSupCode.Text = ID.ToString();
+            string currentMaxID = ID.ToString();
         }
 
         private void noPrincipal()
